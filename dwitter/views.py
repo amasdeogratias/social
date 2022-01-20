@@ -13,6 +13,6 @@ def profile_list(request):
 
 def profile(request, pk):
     profile = Profile.objects.get(pk = pk)
-    return render(request, "dwitter/profile.html", {"profile", profile})
+    return render(request, "dwitter/profile.html", {"profile": profile})
     
     
